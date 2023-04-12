@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -9,11 +9,16 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <Box h={"100vh"}>
-      <Sidebar />
-      <Navbar />
-      <main>{children}</main>
-    </Box>
+    <>
+      {" "}
+      <Box minH={"100vh"}>
+        <Sidebar />
+        <Navbar />
+        <Flex ml={{ base: 0, md: 60 }} p={"5"} bg={"red.400"}>
+          <main>{children}</main>
+        </Flex>
+      </Box>
+    </>
   );
 };
 export default Layout;
