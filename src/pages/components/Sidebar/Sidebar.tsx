@@ -13,7 +13,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
       pos={"fixed"}
       display={{ base: "none", md: "block" }}
     >
-      <Flex h={"60px"} align={"center"} justifyContent={"center"}>
+      <Flex h={"80px"} align={"center"} justifyContent={"center"}>
         <Text color={"white"}>Name here</Text>
       </Flex>
       <Flex

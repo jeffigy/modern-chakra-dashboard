@@ -11,7 +11,7 @@ export const theme = extendTheme({
       400: "#AEAAA9",
       500: "#35353D",
       600: "#FBEADC",
-      700: "#fff486", // hover color
+      700: "#fff7a1", // hover color
     },
   },
   fonts: {

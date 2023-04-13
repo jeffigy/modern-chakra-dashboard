@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Box minH={"100vh"}>
         <Sidebar />
         <Navbar />
-        <Flex ml={{ base: 0, md: 60 }} p={"5"} bg={"red.400"}>
+        <Flex ml={{ base: 0, md: 60 }} p={"5"}>
           <main>{children}</main>
         </Flex>
       </Box>

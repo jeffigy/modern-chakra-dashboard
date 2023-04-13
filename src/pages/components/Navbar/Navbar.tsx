@@ -1,5 +1,7 @@
-import { Button, Flex } from "@chakra-ui/react";
+import { Button, Flex, Spacer, Text } from "@chakra-ui/react";
 import React from "react";
+import RightButtons from "./RightButtons";
+import SearchBar from "./SearchBar";
 
 type NavbarProps = {};
 
@@ -7,21 +9,19 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <Flex
       ml={{ base: 0, md: 60 }}
-      px="4"
+      px={"20px"}
       position="sticky"
       top="0"
-      height="60px"
+      height="80px"
       zIndex="1"
       alignItems="center"
-      bg="white"
-      borderBottomWidth="1px"
-      borderBottomColor="gray.200"
-      // justifyContent={{ base: "space-between", md: "flex-end" }}
+      justifyContent={"space-between"}
     >
-      this is the nav bar
-      <Button size={"lg"} variant={"primarySolid"}>
-        Upgrade
-      </Button>
+      <Text fontSize={"25px"} color={"brand.600"}>
+        Statistics
+      </Text>
+      <SearchBar />
+      <RightButtons />
     </Flex>
   );
 };
