@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@chakra-ui/react";
+import { Avatar, Box, Button, Flex, Spacer, Text } from "@chakra-ui/react";
 type SidebarProps = {};
 
 const Sidebar: React.FC<SidebarProps> = () => {
@@ -12,7 +12,26 @@ const Sidebar: React.FC<SidebarProps> = () => {
       w={60}
       pos={"fixed"}
       display={{ base: "none", md: "block" }}
-    ></Box>
+    >
+      <Flex h={"60px"} align={"center"} justifyContent={"center"}>
+        <Text color={"white"}>Name here</Text>
+      </Flex>
+      <Flex
+        direction={"column"}
+        align={"center"}
+        border={"1px solid green"}
+        h={60}
+        justifyContent={"center"}
+      >
+        <Avatar size={"xl"} mb={"10px"} name="user" />
+        <Text color={"white"} mb={"10px"}>
+          Louis Carter
+        </Text>
+        <Button size={"xs"} variant={"secondaryOutline"}>
+          Edit
+        </Button>
+      </Flex>
+    </Box>
   );
 };
 export default Sidebar;

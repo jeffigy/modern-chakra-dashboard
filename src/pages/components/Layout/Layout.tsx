@@ -10,7 +10,6 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      {" "}
       <Box minH={"100vh"}>
         <Sidebar />
         <Navbar />

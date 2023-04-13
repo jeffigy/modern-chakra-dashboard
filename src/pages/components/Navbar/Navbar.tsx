@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Button, Flex } from "@chakra-ui/react";
 import React from "react";
 
 type NavbarProps = {};
@@ -16,9 +16,12 @@ const Navbar: React.FC<NavbarProps> = () => {
       bg="white"
       borderBottomWidth="1px"
       borderBottomColor="gray.200"
-      justifyContent={{ base: "space-between", md: "flex-end" }}
+      // justifyContent={{ base: "space-between", md: "flex-end" }}
     >
       this is the nav bar
+      <Button size={"lg"} variant={"primarySolid"}>
+        Upgrade
+      </Button>
     </Flex>
   );
 };

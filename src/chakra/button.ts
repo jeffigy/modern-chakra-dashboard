@@ -2,15 +2,29 @@ import { ComponentStyleConfig } from "@chakra-ui/react";
 
 export const Button: ComponentStyleConfig = {
   baseStyle: {
-    bg: "brand.300",
+    borderRadius: "15px",
+    boxShadow: "none",
+    _focus: {
+      boxShadow: "none",
+    },
   },
   variants: {
-    solid: {
+    primarySolid: {
       color: "brand.100",
       bg: "brand.300",
       _hover: {
-        bg: "blue.400",
+        bg: "brand.700",
       },
+    },
+    primaryOutline: {
+      border: "1px solid",
+      borderColor: "brand.300",
+      color: "brand.300",
+    },
+    secondaryOutline: {
+      border: "1px solid",
+      borderColor: "brand.600",
+      color: "brand.600",
     },
   },
 };
