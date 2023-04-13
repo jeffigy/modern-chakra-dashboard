@@ -2,7 +2,7 @@ import { ComponentStyleConfig } from "@chakra-ui/react";
 
 export const Button: ComponentStyleConfig = {
   baseStyle: {
-    borderRadius: "15px",
+    borderRadius: "xl",
     boxShadow: "none",
     _focus: {
       boxShadow: "none",
