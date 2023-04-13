@@ -6,7 +6,11 @@ type SearchBarProps = {};
 
 const SearchBar: React.FC<SearchBarProps> = () => {
   return (
-    <Flex>
+    <Flex
+      flexGrow={1}
+      align={"center"}
+      maxW={{ sm: "200px", md: "300px", lg: "400px" }}
+    >
       <InputGroup>
         <InputLeftElement
           pointerEvents={"none"}
@@ -18,11 +22,7 @@ const SearchBar: React.FC<SearchBarProps> = () => {
           border={"none"}
           color={"brand.600"}
           _placeholder={{ color: "gray.600" }}
-          _focus={{
-            outline: "none",
-            border: "1px solid",
-            borderColor: "brand.600",
-          }}
+          focusBorderColor="brand.600"
         />
       </InputGroup>
     </Flex>
